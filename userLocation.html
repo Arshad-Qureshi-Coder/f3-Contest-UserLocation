@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Location</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="images\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <!-- for IP ADDRESS -->
+        <div class="main">
+            <h1>My Public IP ADDRESS :</h1>
+            <p id="ipAddress"></p>
+        </div>
+         <div class="loc">
+            <div class="location">
+                <div class="fix">
+                    <p>Lat:</p>
+                    <input type="text" id="lat">  
+                </div>
+                <div class="fix">
+                    <p>Long:</p>
+                    <input type="text" id="long">                  
+                </div>
+            </div>
+            <div class="location">
+                <div class="fix">
+                    <p>City:</p>
+                    <input type="text" id="city">
+                </div>
+                <div class="fix">
+                    <p>Region:</p>
+                    <input type="text" id="region">
+                </div>
+            </div>
+            <div class="location">
+                <div class="fix">
+                    <p>Organisation:</p>
+                    <input type="text" id="organisation">           
+                </div>
+                <div class="fix">
+                    <p>Hostname: N/A</p>
+                    <input type="text" id="hostname">               
+                </div>
+            </div>
+         </div>
+
+         <div class="map-container" id="map">
+            <!-- <iframe src="https://maps.google.com/maps?q=30.3275, 78.0325&output=embed" 
+            width="93%" height="450px">
+            </iframe> -->
+         </div>
+
+         <div class="time">
+            <div class="fix">
+                <p>Time Zone:</p>
+                <input type="text" id="timeZone">           
+            </div>
+            <div class="fix">
+                <p>Date And Time:</p>
+                <input type="text" id="dateTine">           
+            </div>
+            <div class="fix">
+                <p>Pincode:</p>
+                <input type="text" id="pincode">           
+            </div>
+            <div class="fix">
+                <p>Message: Number of pincode(s) found:</p>
+                <input type="text" id="msg" >           
+            </div>
+         </div>
+
+         <div class="post">
+             <div class="search">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+                <input type="text" class="input-search" placeholder="Filter">
+            </div>
+            <div class="postOfficeContainer">
+                <div class="postofficeInfo"></div>
+            </div>
+         </div>
+    </div>
+    
+    <!-- <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
